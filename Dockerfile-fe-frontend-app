@@ -10,6 +10,7 @@ RUN pip install awscli
 
 RUN node -v
 RUN npm -v
+RUN git -v
 
 RUN npm config set unsafe-perm true
 RUN npm i -g @angular/cli@1.7.4 --unsafe-perm=true
