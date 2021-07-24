@@ -1,1 +1,9 @@
 FROM node:10
+LABEL version="1.0"
+LABEL description="FE Front App"
+LABEL author_name="Fernando Karnagi"
+LABEL author_email="fkarnagi@gmail.com"
+
+RUN apt-get update
+RUN apt-get -y install python-pip
+RUN pip install awscli
